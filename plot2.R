@@ -7,6 +7,5 @@ DateTime <- paste(Query1$Date, Query1$Time, sep = " ")
 DateTime <- strptime(DateTime, format = "%d/%m/%Y %H:%M:%S")
 plot(DateTime,Query1$Global_active_power,type="l",xlab="",ylab="Global Active 
 Power (kilowatts)")
-axis(1, at=c(1,1440,2880), lab=c("Thu","Fri","Sat"))
 dev.copy(png,'plot2.png')
 dev.off()
